@@ -1,3 +1,14 @@
+// BST trversal common code using DSF
+function travers(root) {
+    if(!root) {
+      return false;
+    }
+    console.log(root.val)
+    return travers(root.left) || travers(root.right)
+}
+//============================================================================================================
+
+
 let input = [1,2,3]
 
 function getSet(arra) {

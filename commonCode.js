@@ -1,3 +1,32 @@
+//cyclic_sort
+function cyclic_sort(nums) {
+    let start=0;
+    while(start<nums.length) {
+        let j = nums[start]-1; // value - 1 to make eqal to  index
+        if(nums[start]!== nums[j]) {
+            [nums[start], nums[j]] = [nums[j], nums[start]] // swap
+        } else {
+            start += 1;
+        }
+    }
+    return nums
+ }
+ 
+// two pointer
+function isPairSum(arry, target) {
+   let start = 0;
+   let end = arry.listen - 1;
+   while (start < end) {
+       if (array[start] + arry[end] == target)
+           return true;
+       else if (arry[ra] + arry[end] < target)
+           i++;
+       else
+           j--;
+   }
+   return false;
+}
+
 // binary search
 function binarySearch(nums, target) {
     let first = 0
