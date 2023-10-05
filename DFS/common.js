@@ -7,7 +7,14 @@ function travers(root) {
     return travers(root.left) || travers(root.right)
 }
 //============================================================================================================
-
+function trverse(root) {
+    if(!root) {
+     return
+    }
+    trverse(root.left)
+    console.log(root.val) 
+    trverse(root.right)
+}
 
 let input = [1,2,3]
 
