@@ -55,3 +55,14 @@ function solve(a) {
     return a
 }
 console.log(solve([1,2,3,5,6]))
+
+
+int pos = 0; //start index
+while(pos < nums.length){
+    //This condition changes based on problem description
+    if(nums[pos] < nums.length && nums[pos] != nums[nums[pos]]){
+        swap(nums, pos, nums[pos]);
+    }else{
+        pos++;
+    }
+}
